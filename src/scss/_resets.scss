@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Open+Sans:ital@0;1&family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none;
+}

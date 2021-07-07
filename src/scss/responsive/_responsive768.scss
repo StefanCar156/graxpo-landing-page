@@ -1,0 +1,279 @@
+@media screen and (max-width: 768px) {
+  header,
+  .header--sticky {
+    position: fixed;
+    padding: 20px 30px;
+  }
+  .nav__logo {
+    font-size: 18px;
+    margin-left: 0;
+  }
+  .nav__btn {
+    margin-right: 0;
+  }
+
+  .hero {
+    background-position: 85%;
+
+    &__content {
+      min-width: 0;
+      margin: 16px 15px 0;
+    }
+    &__subtitle {
+      text-align: center;
+      width: 60%;
+      min-width: 300px;
+      margin: 30px auto 0;
+    }
+  }
+  .about {
+    padding-top: 60px;
+    &__paragraph {
+      text-align: justify;
+    }
+  }
+  .services {
+    padding-top: 80px;
+  }
+
+  .achievements {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &::after {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+      }
+    }
+    .item {
+      margin-top: 0 !important;
+      &__number {
+        span {
+          margin: 0 !important;
+        }
+      }
+      &__icon {
+        margin: 0 !important;
+        margin-right: 10px !important;
+      }
+    }
+  }
+  .steps {
+    padding-top: 50px;
+
+    &__subtitle {
+      margin: 64px 20px 0;
+    }
+
+    &__line {
+      height: 100%;
+      width: 1px;
+      top: 0;
+      left: 72px;
+    }
+    &__list {
+      flex-direction: column;
+      width: 55%;
+      min-width: 420px;
+    }
+    .item {
+      flex-direction: row;
+      margin-bottom: 50px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &__img {
+        margin-right: 20px;
+      }
+
+      &__description {
+        margin: 0;
+        text-align: left;
+      }
+      &__paragraph {
+        margin-top: 10px;
+      }
+    }
+  }
+  .work {
+    padding-top: 50px;
+
+    &__subtitle {
+      margin: 64px 20px 0;
+    }
+
+    &__articles {
+      flex-direction: column;
+    }
+    .article__overlay {
+      display: none;
+    }
+  }
+  .best {
+    padding-top: 50px;
+
+    &__subtitle {
+      margin: 64px 20px 0;
+    }
+
+    &__articles {
+      padding: 20px 10px;
+    }
+    .article {
+      width: 100%;
+      flex-direction: column;
+      margin: 0 0 40px !important;
+
+      &:nth-of-type(2) {
+        .article__text {
+          order: 2;
+        }
+      }
+      &:last-of-type {
+        margin-bottom: 0 !important;
+      }
+      &__img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      &__text {
+        margin: 0 !important;
+        text-align: justify;
+      }
+      &__title {
+        text-align: center;
+
+        &::after {
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  .cta {
+    text-align: center;
+
+    &__title {
+      line-height: 40px;
+    }
+  }
+  .portfolio {
+    padding-top: 50px;
+    &__subtitle {
+      margin: 64px 20px 0;
+    }
+    &__categories {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    &__category {
+      margin-left: 15px;
+      margin-top: 20px !important;
+
+      &--active {
+        &::before {
+          bottom: -10px;
+          height: 2px;
+        }
+      }
+    }
+    .article:hover {
+      .overlay {
+        display: none;
+      }
+    }
+  }
+  .team {
+    padding: 50px 40px 40px;
+
+    &__articles {
+      margin-top: 40px;
+    }
+
+    .article {
+      &__info {
+        height: 70%;
+      }
+      &__title {
+        margin-top: 20px;
+      }
+      &__name {
+        font-size: 15px;
+      }
+      &__position {
+        font-size: 11px;
+      }
+    }
+  }
+  .blog {
+    padding-top: 50px;
+
+    &__subtitle {
+      margin: 64px 20px 0;
+    }
+
+    &__articles {
+      align-items: center;
+      margin-top: 40px;
+    }
+    .article {
+      width: 90%;
+
+      &__img {
+        width: 100%;
+      }
+      &__content {
+        justify-content: center;
+        max-width: 50%;
+      }
+      &__title {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &__author {
+        font-size: 12px;
+      }
+      &__paragraph {
+        font-size: 10px;
+        width: fit-content;
+      }
+      &__date {
+        font-size: 10px;
+      }
+    }
+  }
+  .pricing {
+    padding-top: 80px;
+
+    &__subtitle {
+      margin: 64px 20px 0;
+    }
+
+    &__articles {
+      margin-top: 50px;
+    }
+  }
+  .contact {
+    padding-top: 80px;
+
+    &__subtitle {
+      margin: 64px 20px 0;
+    }
+
+    &__form {
+      margin-left: 0;
+    }
+  }
+}

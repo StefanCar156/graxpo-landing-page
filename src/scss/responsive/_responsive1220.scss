@@ -1,0 +1,136 @@
+@media screen and (max-width: 1220px) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .about {
+    width: 90%;
+
+    &__img {
+      margin: 0 0 0 50px;
+    }
+  }
+  .services {
+    width: 90%;
+    &__articles {
+      .article {
+        width: fit-content;
+        padding: 17px 20px 39px 21px;
+
+        &__img__wrap {
+          width: 80px;
+          height: 80px;
+        }
+        &__paragraph {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+  .achievements {
+    &__list {
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .steps {
+    padding: 92px 30px 82px;
+    width: 100%;
+
+    &__list {
+      width: 100%;
+    }
+    &__item {
+      margin: 0 20px;
+    }
+  }
+
+  .best {
+    .article {
+      margin-bottom: 30px;
+      justify-content: space-between;
+      align-items: center;
+
+      &,
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        .article__text {
+          margin: 0;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &__img {
+        width: 40vw;
+      }
+      &__paragraph {
+        max-width: 480px;
+      }
+    }
+  }
+  .subscribe {
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team {
+    padding: 100px 40px 80px;
+
+    .article__info {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      padding: 16px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .article__social {
+      margin-top: 12px;
+    }
+  }
+  .testimonials {
+    width: 100%;
+  }
+  .blog {
+    &__articles {
+      flex-direction: column;
+
+      .article:first-of-type {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .pricing {
+    &__articles {
+      width: 90%;
+
+      .article {
+        min-width: 280px;
+
+        &__title {
+          padding: 25px 0;
+        }
+        &__feature {
+          padding: 13px;
+        }
+        &__footer {
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .contact {
+    &__main {
+      width: 85%;
+    }
+  }
+}

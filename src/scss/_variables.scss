@@ -1,0 +1,82 @@
+// Variables
+$primaryOrange: #e84c3d;
+$primaryGray: #333b46;
+$secondaryGray: #81868e;
+$roboto: "Roboto", sans-serif;
+$openSans: "Open Sans", sans-serif;
+
+// Maps
+$font-weights: (
+  "thin": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+);
+// Functions
+@function weight($weight-key) {
+  @return map-get($font-weights, $weight-key);
+}
+
+// Mixins
+
+@mixin titleUnderline {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 46px;
+  height: 3px;
+  background-color: #898989;
+}
+
+@mixin sectionHeader {
+  &__title {
+    @extend .about__title;
+
+    &::after {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  &__subtitle {
+    margin-top: 64px;
+    max-width: 550px;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 26px;
+    color: $secondaryGray;
+    font-family: $openSans;
+    text-align: center;
+  }
+}
+
+@mixin flexColumnLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin articleOverlay {
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(232, 75, 61, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+    transform-origin: center;
+  }
+  &:hover {
+    .article__overlay {
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}
