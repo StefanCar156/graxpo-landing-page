@@ -32,11 +32,21 @@ $font-weights: (
 
 @mixin sectionHeader {
   &__title {
-    @extend .about__title;
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 12px;
+    color: #333b46;
+    font-weight: weight(medium);
+    font-family: $roboto;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 2px;
 
     &::after {
+      @include titleUnderline;
       left: 50%;
       transform: translate(-50%);
+      bottom: -29px;
     }
   }
   &__subtitle {

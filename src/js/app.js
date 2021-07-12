@@ -84,15 +84,12 @@ function fixedNav() {
   if (document.body.getBoundingClientRect().top > scrollPosition) {
     header.classList.remove("header--hidden")
     header.classList.add("header--sticky")
-    header.style.boxShadow = "0 5px 5px rgba(0, 0, 0, 0.1)"
   } else {
     header.classList.add("header--hidden")
     header.classList.remove("header--sticky")
-    header.style.boxShadow = "none"
   }
   if (window.scrollY < 100) {
     header.classList.remove("header--sticky")
-    header.style.boxShadow = "none"
   }
   // save the new position for iteration.
   scrollPosition = document.body.getBoundingClientRect().top
